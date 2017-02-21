@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, StyleSheet, TouchableOpacity, View } from 'react-native';
-import { COLORS } from '../../constants/constants';
 
 const styles = StyleSheet.create({
   container: {
@@ -15,7 +14,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 12,
-    color: COLORS.LINK,
+    color: '#02ADF0',
   },
   placeholder: {
     borderColor: '#ccc',

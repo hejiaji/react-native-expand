@@ -7,4 +7,4 @@ const ExpandExample = () => {
   return <App />
 };
 
-AppRegistry.registerComponent('ExpandExample', () => ExpandExample);
+AppRegistry.registerComponent('example', () => ExpandExample);
