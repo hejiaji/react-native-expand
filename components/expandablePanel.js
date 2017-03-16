@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class ExpandablePanel extends React.Component {
+export default class ExpandablePanel extends React.Component {
   constructor(props) {
     super(props);
     this.getExpandText = this.getExpandText.bind(this);
@@ -62,5 +62,3 @@ ExpandablePanel.propTypes = {
   expandText: React.PropTypes.string.isRequired,
   contentPanelStyle: React.PropTypes.number,
 };
-
-export default ExpandablePanel;
