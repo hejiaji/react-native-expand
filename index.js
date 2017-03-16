@@ -1,3 +1,3 @@
-const ExpandablePanel = require('./components/ExpandablePanel');
+const Calendar = require('./components/Calendar');
 
-module.exports = ExpandablePanel;
+module.exports = Calendar;
