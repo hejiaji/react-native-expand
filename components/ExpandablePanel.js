@@ -21,7 +21,7 @@ export default class ExpandablePanel extends React.Component {
 
   getExpandText() {
     const { expandText } = this.props;
-    return this.state.isExpanded ? '↑ 收 起' : `↓ ${expandText}`;
+    return this.state.isExpanded ? '↑ collapse' : `↓ ${expandText}`;
   }
 
   handleExpandPress() {
