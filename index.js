@@ -1,3 +1,3 @@
-import ExpandablePanel from './components/expandablePanel';
+const ExpandablePanel = require('./components/expandablePanel');
 
 export default ExpandablePanel;
