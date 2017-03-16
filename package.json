@@ -2,7 +2,7 @@
   "name": "react-native-expand",
   "version": "0.0.1",
   "description": "Simple Expand Component for React Native",
-  "main": "index.js",
+  "main": "./components/ExpandablePanel.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:hejiaji/react-native-expand.git"
