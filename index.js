@@ -1,4 +1,4 @@
-import ExpandablePanel from './components/expandablePanel';
-import ExpandableActionPanel from './components/expandActionPanel';
+import ExpandablePanel from './components/ExpandablePanel';
 
-export { ExpandablePanel, ExpandableActionPanel };
+module.exports = ExpandablePanel;
+

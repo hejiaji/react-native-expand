@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import ExpandActionPanel from './expandActionPanel';
+import ExpandActionPanel from './ExpandActionPanel';
 
 const styles = StyleSheet.create({
   panel: {
