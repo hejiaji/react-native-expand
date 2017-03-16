@@ -1,4 +1,3 @@
-const ExpandablePanel = require('./components/ExpandablePanel');
+import ExpandablePanel from './components/ExpandablePanel';
 
 module.exports = ExpandablePanel;
-
