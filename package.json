@@ -1,11 +1,11 @@
 {
-  "name": "react-native-calendar",
+  "name": "react-native-expand",
   "version": "0.0.1",
   "description": "Simple Expand Component for React Native",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:hejiaji/react-native-expand.git"
   },
   "scripts": {
     "eslint": "eslint ."
