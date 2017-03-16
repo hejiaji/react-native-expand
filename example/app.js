@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 
-import ExpandablePanel from './components/expandablePanel';
+import ExpandablePanel from 'react-native-expand';
 import BandageIcon from './images/bandaged.png';
 import CallIcon from './images/call.png';
 import DislikeIcon from './images/dislike.png';
