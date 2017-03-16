@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 import ExpandablePanel from 'react-native-expand';
+import Calendar from 'react-native-calendar';
 
 import BandageIcon from './images/bandaged.png';
 import CallIcon from './images/call.png';
@@ -57,6 +58,8 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('calendar', Calendar);
+    console.log('what', ExpandablePanel);
     return (
       <ScrollView>
         <ExpandablePanel

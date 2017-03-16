@@ -13,12 +13,9 @@
   "author": "Jeremy He",
   "license": "MIT",
   "devDependencies": {
-    "babel-jest": "19.0.0",
-    "babel-preset-react-native": "1.9.1",
     "babel-eslint": "4.1.6",
     "eslint": "3.7.1",
     "eslint-config-airbnb": "12.0.0",
-    "eslint-plugin-import": "1.16.0",
     "eslint-plugin-jsx-a11y": "2.2.3",
     "eslint-plugin-react": "6.4.0",
     "react": "15.3.2",
