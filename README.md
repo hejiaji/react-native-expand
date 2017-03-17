@@ -1,13 +1,54 @@
 # react-native-expand
 
-This component provides expandable ability to collapse/expand multiple items. Mostly for structures like ListView, you can collapse/expand the items by click the action area.
+A expandable component for React Native
 
+![image](Example/images/demo.gif)
 
 ## Getting started
 ```bash
 npm install react-native-expand --save
 ```
 
-## Demo
+## Example usage
 
-see ```/Example``` directory
+```javascript
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.ds = [BandageIcon,CallIcon,DislikeIcon,
+    FistIcon, FlowersIcon, HeartIcon, LikeIcon,
+    LikingIcon, PartyIcon, PokeIcon, SuperLikeIcon, VictoryIcon];
+  }
+
+  renderRowData(rowData, index) {
+    return (
+      <View key={index} style={styles.row}>
+        <Image style={styles.thumb} source={rowData}/>
+        <Text style={styles.text}>Row{index + 1} {LOREM_IPSUM}</Text>
+      </View>
+    );
+  }
+
+  render() {
+    return (
+      <ScrollView>
+        <ExpandablePanel
+          contentPanelStyle={styles.container}
+          dataSource={this.ds}
+          renderRow={this.renderRowData}
+          expandText="Load More"
+        />
+      </ScrollView>
+    )
+  }
+}
+```
+
+## Properties
+
+| Prop | Description | Default |
+|---|---|---|
+|**`contentPanelStyle`**|The style for the component container.|None|
+|**`dataSource`**|The dataSource for the component to use.| None |
+|**`renderRow`**|The function to defined how the item to be showed.|None|
+|**`expandText `**|The text to indicate expand operation.||
