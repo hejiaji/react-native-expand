@@ -1,0 +1,20 @@
+{
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ios.js", ".android.js"]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-unresolved": [2, { "ignore": [".png"] }],
+    "no-underscore-dangle": [0],
+    "react/forbid-prop-types": [0],
+    "react/no-unused-prop-types": [2, { "skipShapeProps": true }]
+  },
+  "env": {
+    "jest": true
+  }
+}

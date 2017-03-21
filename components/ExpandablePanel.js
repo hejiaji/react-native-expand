@@ -20,8 +20,8 @@ export default class ExpandablePanel extends React.Component {
   }
 
   getExpandText() {
-    const { expandText } = this.props;
-    return this.state.isExpanded ? '↑ collapse' : `↓ ${expandText}`;
+    const { expandText, collapseText } = this.props;
+    return this.state.isExpanded ? collapseText : expandText;
   }
 
   handleExpandPress() {
@@ -59,6 +59,12 @@ ExpandablePanel.propTypes = {
   dataSource: React.PropTypes.array.isRequired,
   renderRow: React.PropTypes.func.isRequired,
   renderHeader: React.PropTypes.func,
-  expandText: React.PropTypes.string.isRequired,
+  expandText: React.PropTypes.string,
+  collapseText: React.PropTypes.string,
   contentPanelStyle: React.PropTypes.number,
+};
+
+ExpandablePanel.defaultProps = {
+  expandText: '↓ Load More',
+  collapseText: '↑ Collapse',
 };

@@ -62,7 +62,6 @@ class App extends React.Component {
           contentPanelStyle={styles.container}
           dataSource={this.ds}
           renderRow={this.renderRowData}
-          expandText="Load More"
         />
       </ScrollView>
     )
