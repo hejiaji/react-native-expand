@@ -36,7 +36,6 @@ class App extends React.Component {
           contentPanelStyle={styles.container}
           dataSource={this.ds}
           renderRow={this.renderRowData}
-          expandText="Load More"
         />
       </ScrollView>
     )
@@ -51,4 +50,5 @@ class App extends React.Component {
 |**`contentPanelStyle`**|The style for the component container.|None|
 |**`dataSource`**|The dataSource for the component to use.| None |
 |**`renderRow`**|The function to defined how the item to be showed.|None|
-|**`expandText `**|The text to indicate expand operation.||
+|**`expandText `**|The text to indicate expand operation.|`↓ Load More`|
+|**`collapseText `**|The text to indicate collapse operation.|`↑ Collapse`|

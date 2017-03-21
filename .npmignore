@@ -24,4 +24,5 @@ DerivedData
 # node.js
 #
 node_modules/
+Example/node_modules/
 npm-debug.log
