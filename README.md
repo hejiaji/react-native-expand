@@ -1,5 +1,8 @@
 # react-native-expand
 
+![travis-ci](https://travis-ci.org/hejiaji/react-native-expand.svg?branch=master)
+
+
 A expandable component for React Native
 
 ![image](Example/images/demo.gif)
