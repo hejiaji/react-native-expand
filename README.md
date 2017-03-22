@@ -31,13 +31,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <ScrollView>
-        <ExpandablePanel
-          contentPanelStyle={styles.container}
-          dataSource={this.ds}
-          renderRow={this.renderRowData}
-        />
-      </ScrollView>
+      <ExpandablePanel
+        contentPanelStyle={styles.container}
+        dataSource={this.ds}
+        renderRow={this.renderRowData}
+      />
     )
   }
 }
