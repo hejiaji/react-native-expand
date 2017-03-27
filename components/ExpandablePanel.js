@@ -38,7 +38,13 @@ export default class ExpandablePanel extends React.Component {
   }
 
   render() {
-    const { dataSource, contentPanelStyle, renderHeader } = this.props;
+    const {
+      dataSource,
+      contentPanelStyle,
+      footerPanelStyle,
+      footerTextStyle,
+      renderHeader,
+    } = this.props;
     return (
       <ScrollView style={styles.panel}>
         { renderHeader && renderHeader() }
@@ -49,6 +55,8 @@ export default class ExpandablePanel extends React.Component {
           onPress={this.handleExpandPress}
           text={this.getExpandText()}
           size={dataSource.length}
+          containerStyle={footerPanelStyle}
+          textStyle={footerTextStyle}
         />
       </ScrollView>
     );
@@ -61,7 +69,9 @@ ExpandablePanel.propTypes = {
   renderHeader: React.PropTypes.func,
   expandText: React.PropTypes.string,
   collapseText: React.PropTypes.string,
-  contentPanelStyle: React.PropTypes.number,
+  contentPanelStyle: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.array]),
+  footerPanelStyle: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.array]),
+  footerTextStyle: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.array]),
   minRowCount: React.PropTypes.number,
 };
 

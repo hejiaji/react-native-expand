@@ -6,15 +6,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 46,
-    borderColor: '#ccc',
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    backgroundColor: '#fff',
   },
   text: {
-    fontSize: 12,
-    color: '#02ADF0',
   },
   placeholder: {
     borderColor: '#ccc',
@@ -25,20 +18,22 @@ const styles = StyleSheet.create({
 function ExpandActionPanel(props) {
   return props.size > 1
     ?
-      <TouchableOpacity
-        onPress={props.onPress}
-        style={styles.container}
-      >
-        <Text style={styles.text}>{ props.text }</Text>
-      </TouchableOpacity>
+    <TouchableOpacity
+      onPress={props.onPress}
+      style={[styles.container, props.containerStyle]}
+    >
+      <Text style={[styles.text, props.textStyle]}>{ props.text }</Text>
+    </TouchableOpacity>
     :
-      <View style={styles.placeholder} />;
+    <View style={styles.placeholder} />;
 }
 
 ExpandActionPanel.propTypes = {
   onPress: React.PropTypes.func.isRequired,
   text: React.PropTypes.string.isRequired,
   size: React.PropTypes.number.isRequired,
+  containerStyle: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.array]),
+  textStyle: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.array]),
 };
 
 export default ExpandActionPanel;

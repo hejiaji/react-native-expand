@@ -19,6 +19,17 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 50,
   },
+  footerContainer: {
+    height: 46,
+    borderColor: '#ccc',
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    backgroundColor: '#fff',
+  },
+  footerText: {
+    fontSize: 12,
+    color: '#02ADF0',
+  },
   thumb: {
     width: 64,
     height: 64,
@@ -59,6 +70,8 @@ class App extends React.Component {
     return (
       <ExpandablePanel
         contentPanelStyle={styles.container}
+        footerPanelStyle={styles.footerContainer}
+        footerTextStyle={styles.footerText}
         dataSource={this.ds}
         renderRow={this.renderRowData}
       />
