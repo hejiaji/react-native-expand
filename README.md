@@ -49,6 +49,8 @@ class App extends React.Component {
 | Prop | Description | Default |
 |---|---|---|
 |**`contentPanelStyle`**|The style for the component container.|None|
+|**`footerPanelStyle`**|The style for the footer container.|None|
+|**`footerTextStyle`**|The style for the footer text.|None|
 |**`dataSource`**|The dataSource for the component to use.| None |
 |**`renderRow`**|The function to defined how the item to be showed.|None|
 |**`renderHeader`**|The function to render customer header for this component.|None|
