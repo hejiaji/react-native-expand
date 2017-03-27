@@ -32,8 +32,8 @@ export default class ExpandablePanel extends React.Component {
   }
 
   renderData() {
-    const { dataSource } = this.props;
-    const rowsData = this.state.isExpanded ? dataSource : dataSource.slice(0, 1);
+    const { dataSource, minRowCount } = this.props;
+    const rowsData = this.state.isExpanded ? dataSource : dataSource.slice(0, minRowCount);
     return rowsData.map((row, index) => (this.props.renderRow(row, index)));
   }
 
@@ -62,9 +62,11 @@ ExpandablePanel.propTypes = {
   expandText: React.PropTypes.string,
   collapseText: React.PropTypes.string,
   contentPanelStyle: React.PropTypes.number,
+  minRowCount: React.PropTypes.number,
 };
 
 ExpandablePanel.defaultProps = {
   expandText: '↓ Load More',
   collapseText: '↑ Collapse',
+  minRowCount: 1,
 };

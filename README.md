@@ -52,5 +52,6 @@ class App extends React.Component {
 |**`dataSource`**|The dataSource for the component to use.| None |
 |**`renderRow`**|The function to defined how the item to be showed.|None|
 |**`renderHeader`**|The function to render customer header for this component.|None|
+|**`minRowCount`**|The minimum count of rows to render when the component is collapsed .|`1`|
 |**`expandText `**|The text to indicate expand operation.|`↓ Load More`|
 |**`collapseText `**|The text to indicate collapse operation.|`↑ Collapse`|
