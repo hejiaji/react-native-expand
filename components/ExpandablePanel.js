@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import ExpandActionPanel from './ExpandActionPanel';
 
@@ -46,7 +46,7 @@ export default class ExpandablePanel extends React.Component {
       renderHeader,
     } = this.props;
     return (
-      <ScrollView style={styles.panel}>
+      <View style={styles.panel}>
         { renderHeader && renderHeader() }
         <View style={contentPanelStyle}>
           { this.renderData() }
@@ -58,7 +58,7 @@ export default class ExpandablePanel extends React.Component {
           containerStyle={footerPanelStyle}
           textStyle={footerTextStyle}
         />
-      </ScrollView>
+      </View>
     );
   }
 }
